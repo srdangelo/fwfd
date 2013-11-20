@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fwfd</title>
+    <link rel="stylesheet" href="fwfd.css">
+  </head>
+  <body>
+    <canvas id="display" width="1000" height="800"></canvas>
+
+    <script type="application/dart" src="fwfd.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+    
+   <!-- This prevents touch input from triggering a rightclick event -->
+   <script type="text/javascript">
+      window.oncontextmenu = function(event) {
+         event.preventDefault();
+         event.stopPropagation();
+         return false;
+      };
+   </script>
+  
+      </body>
+</html>
